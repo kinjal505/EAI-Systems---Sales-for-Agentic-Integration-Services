@@ -1,6 +1,5 @@
 Client says:
-We use SAP and Salesforce.
-Approvals happen manually in Excel.
-Reports take too long.
-Systems are disconnected.
-We want automation.
+We currently use SAP and Salesforce across departments.
+Most approvals are still handled manually in Excel.
+Reporting takes too long and systems are disconnected.
+We need workflow automation and faster onboarding.
