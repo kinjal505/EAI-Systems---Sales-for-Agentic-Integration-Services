@@ -1,0 +1,6 @@
+Client says:
+We use SAP and Salesforce.
+Approvals happen manually in Excel.
+Reports take too long.
+Systems are disconnected.
+We want automation.
