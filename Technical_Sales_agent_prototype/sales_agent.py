@@ -3,9 +3,9 @@ from reportlab.lib import colors
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 
-# -------------------------------
+
 # Claude Reasoning Layer (Simulated)
-# -------------------------------
+
 def claude_reasoning_layer(transcript):
     pain_points = []
 
@@ -24,9 +24,8 @@ def claude_reasoning_layer(transcript):
     return pain_points
 
 
-# -------------------------------
 # Tech Stack Detection
-# -------------------------------
+
 def detect_tech_stack(transcript):
     tech_stack = []
 
@@ -42,9 +41,8 @@ def detect_tech_stack(transcript):
     return tech_stack
 
 
-# -------------------------------
 # RAG Retrieval Layer
-# -------------------------------
+
 def rag_retrieve_case(transcript):
     if "SAP" in transcript and "Salesforce" in transcript:
         return "Integrated SAP and Salesforce using API gateway and workflow automation"
@@ -56,9 +54,8 @@ def rag_retrieve_case(transcript):
         return "Built centralized enterprise reporting dashboard"
 
 
-# -------------------------------
 # Architecture Generator
-# -------------------------------
+
 def generate_architecture(tech_stack):
     architecture = []
 
@@ -73,9 +70,8 @@ def generate_architecture(tech_stack):
     return architecture
 
 
-# -------------------------------
 # PDF Generator
-# -------------------------------
+
 def generate_pdf(pain_points, tech_stack, architecture, reference_case):
     doc = SimpleDocTemplate("solution_design.pdf", pagesize=A4)
     styles = getSampleStyleSheet()
@@ -108,9 +104,8 @@ def generate_pdf(pain_points, tech_stack, architecture, reference_case):
     doc.build(elements)
 
 
-# -------------------------------
 # Main Agent Workflow
-# -------------------------------
+
 with open("transcript.txt", "r") as file:
     transcript = file.read()
 
